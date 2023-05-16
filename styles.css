@@ -1,0 +1,127 @@
+:root {
+  --blue: #05cbe0;
+  --purple: #111d4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Blinker", sans-serif;
+  /* background-color: magenta; */
+  /* border: 2px solid black; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+a {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card {
+  max-width: 1000px;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-image {
+  height: 200px;
+  object-position: center;
+}
+
+/* CARD MAIN
+============= */
+
+.card-main {
+  padding: 2em 2em 0.5em 2em;
+}
+
+.card-heading {
+  color: var(--blue);
+  margin: 0;
+}
+
+.card-body {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+  max-width: 300px;
+}
+
+/* CARD FOOTER 
+================*/
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: magenta; */
+}
+
+.read-time {
+  color: white;
+  opacity: 0.6;
+  /* background-color: red; */
+}
+
+span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.read-more {
+  background-color: var(--blue);
+  padding: 0.4em 1.2em;
+  align-self: center;
+}
+
+.read-more:hover {
+  cursor: pointer;
+}
+
+/* MEDIA QUERY FOR BIGGER SCREENS
+======================== */
+@media (min-width: 500px) {
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  .card-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+  .phone-image {
+    height: 400px;
+    width: 35%;
+    min-width: 150px;
+    object-fit: cover;
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
+}
